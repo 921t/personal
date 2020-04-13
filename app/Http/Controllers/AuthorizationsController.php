@@ -14,7 +14,7 @@ class AuthorizationsController extends Controller
             'client_id' => 3,
             'redirect_uri' => 'http://personal.test/authorizations/callback',
             'response_type' => 'code',
-            'scope' => '',
+            'scope' => 'bing',
         ]);
 
         return redirect('http://provider.test/oauth/authorize?' . $query);
